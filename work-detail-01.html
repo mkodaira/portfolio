@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mana Kodaira</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <p class="logo">Portfolio | Mana Kodaira</p>
+    </a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="index.html#work">Work</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="work-detail">
+
+    <!-- ===== Hero / Summary ===== -->
+    <section class="work-hero">
+      <div class="work-hero-inner">
+
+        <!-- サムネイル -->
+        <div class="work-hero-image">
+          <img src="img/ysp/thumb_ysp.jpg" alt="某コンサルティング会社様 コーポレート制作 サムネイル画像">
+        </div>
+
+        <!-- 概要 -->
+        <div class="work-hero-meta">
+          <p class="work-category">✴︎ My work</p>
+          <h1 class="work-title">コーポレートサイト制作</h1>
+          <p class="work-client">某コンサルティング会社様</p>
+
+          <ul class="work-tags">
+            <li>Design</li>
+            <li>Coding</li>
+          </ul>
+
+          <dl class="work-info">
+            <div>
+              <dt>案件種別</dt>
+              <dd>コーポレートサイトのリニューアル</dd>
+            </div>
+            <div>
+              <dt>担当範囲</dt>
+              <dd>
+                ヒアリング / 情報設計 / UI・ビジュアルデザイン /
+                コーディング / WordPress実装
+              </dd>
+            </div>
+            <div>
+              <dt>制作体制</dt>
+              <dd>デザイナー1名</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>サイト構造の整理と、企業イメージの刷新</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Content Blocks ===== -->
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 背景と課題</h2>
+
+      <h3>背景</h3>
+      <p>
+        既存サイトは定期的に情報追加されていたものの、整理されないまま運用されており、
+        サイト内の導線が複雑化していました。
+      </p>
+
+      <h3>課題</h3>
+      <ul>
+        <li>掲載情報が整理されておらず、必要な情報に辿り着きにくい</li>
+        <li>デザインが古く、レスポンシブ未対応</li>
+        <li>クライアント自身が更新しづらい構造</li>
+      </ul>
+
+      <p class="work-emphasis">
+        → クライアント側の運用負荷が高い状態が課題だと判断しました。
+      </p>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 設計方針</h2>
+
+      <h3>1. 情報整理を前提とした構造設計</h3>
+      <ul>
+        <li>情報を「用途・目的別」に整理</li>
+        <li>ページ構成・導線をシンプルに再設計</li>
+      </ul>
+
+      <h3>2. WordPress運用を前提としたデザイン</h3>
+      <ul>
+        <li>クライアント側で文字・画像を差し替えても崩れないことを最優先</li>
+        <li>コンポーネント単位でデザインを設計し、どのページでも自然に成立するUIを目指しました</li>
+      </ul>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ デザイン</h2>
+
+      <h3>ビジュアルトーン</h3>
+      <p>
+        トップページのキャッチコピー「採用の熱量をあげる」に合わせて、
+      </p>
+      <ul>
+        <li>黄色やオレンジを基調とした配色</li>
+        <li>徐々に“温度が上がっていく”印象を与えるような、堅すぎず温かみのある企業イメージを表現しました</li>
+      </ul>
+      <div class="work-image-grid">
+        <img src="img/ysp/PC_ysp.jpg" alt="PCのデザイン画像" class="js-modal-image">
+        <img src="img/ysp/SP_ysp.jpg" alt="SPのデザイン画像" class="js-modal-image">
+      </div>
+
+      <h3>UI設計</h3>
+      <ul>
+        <li>コンポーネントを意識したレイアウト設計</li>
+        <li>誰が触っても一定の見た目を保てる構造</li>
+      </ul>
+
+      <h3>イラスト制作</h3>
+      <div class="work-image-grid">
+        <img src="img/ysp/img_ysp.jpg" alt="PCのデザイン画像" class="js-modal-image">
+      </div>
+
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 実装</h2>
+      <ul>
+        <li>レスポンシブ対応</li>
+        <li>WordPressへの組み込み</li>
+        <li>投稿機能の実装</li>
+        <li>お問い合わせフォームの実装</li>
+      </ul>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 振り返り</h2>
+      <p>
+        運用を前提とした設計により、クライアントが自身で運用できるサイト構造を実現できました。
+      </p>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <p>© 2025 Mana Kodaira</p>
+</footer>
+
+<div class="image-modal" id="imageModal">
+  <button class="image-modal__close" aria-label="Close">×</button>
+  <img src="" alt="">
+</div>
+<script src="js/style.js"></script>
+
+</body>
+</html>
