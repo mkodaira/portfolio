@@ -127,9 +127,34 @@
         <li>ボタンや見出し、カード要素などを整理し、統一感を持たせる</li>
       </ul>
       <div class="work-image-grid">
-        <img src="img/pop/PC_pop.jpg" alt="PCのサムネイル画像" class="js-modal-image">
-        <img src="img/pop/SP_pop.jpg" alt="SPのサムネイル画像" class="js-modal-image">
+        <img src="img/pop/PC_pop.jpg" alt="PCのサムネイル画像" class="js-fit-modal-image">
+        <img src="img/pop/SP_pop.jpg" alt="SPのサムネイル画像" class="js-fit-modal-image">
       </div>
+
+      <!-- モーダルを開くボタン -->
+      <div class="work-modal-trigger">
+        <button
+          type="button"
+          class="js-scroll-modal-trigger modal-btn"
+          data-full="img/pop/cap_pop.png"
+        >
+          ページ全体をみる
+        </button>
+      </div>
+      <!-- スクロールあり：縦スクロール用モーダル -->
+      <div class="image-modal-scroll" id="imageModalScroll" aria-hidden="true">
+        <div class="image-modal-scroll__content">
+          <div class="modal-text">
+            <p>スクロールしてください</p>
+          </div>
+          <button class="image-modal-scroll__close" aria-label="Close">×</button>
+          <div class="image-modal-scroll__body">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+
+
     </section>
     <section class="work-section">
       <h2 class="work-section-title">✴︎ 振り返り</h2>
@@ -145,8 +170,8 @@
   <p>© 2025</p>
 </footer>
 
-<div class="image-modal" id="imageModal">
-  <button class="image-modal__close" aria-label="Close">×</button>
+<div class="image-modal-fit" id="imageModalFit" aria-hidden="true">
+  <button class="image-modal-fit__close" aria-label="Close">×</button>
   <img src="" alt="">
 </div>
 <script src="js/style.js"></script>

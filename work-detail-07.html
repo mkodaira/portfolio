@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <p class="logo">My Portfolio</p>
+    </a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="index.html#work">Work</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="work-detail">
+
+    <!-- ===== Hero / Summary ===== -->
+    <section class="work-hero">
+      <div class="work-hero-inner">
+
+        <!-- サムネイル -->
+        <div class="work-hero-image">
+          <img src="img/LP/thumb_lp_02.jpg" alt=" サムネイル画像">
+        </div>
+
+        <!-- 概要 -->
+        <div class="work-hero-meta">
+          <p class="work-category">✴︎ My work</p>
+          <h1 class="work-title">キャンペーンLPサイト制作</h1>
+          <p class="work-client">某カーリースサービス会社様</p>
+
+          <ul class="work-tags">
+            <li>Design</li>
+          </ul>
+
+          <dl class="work-info">
+            <div>
+              <dt>担当範囲</dt>
+              <dd>
+                ワイヤーフレーム作成／ビジュアルデザイン
+              </dd>
+            </div>
+            <div>
+              <dt>制作体制</dt>
+              <dd>デザイナー2人</dd>
+            </div>
+            <div>
+              <dt>制作期間</dt>
+              <dd>約1ヶ月</dd>
+            </div>
+            <div>
+              <dt>前提条件</dt>
+              <dd>ページ内構成、説明イラストはクライアント提供</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Content Blocks ===== -->
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 概要</h2>
+      <p>
+        カーリースサービスにおいて、特定の車種をキャンペーンとして訴求するためのLP制作です。対象車種はキャンプやアウトドア利用に適したもので、単なるスペックの紹介ではなく、「どのような体験ができるか」を視覚的に伝えることが求められました。
+      </p>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ デザイン</h2>
+      <p>
+        <span class="font-bold">「アウトドアを、もっと快適に、もっと自由に」</span>というキャッチフレーズをもとに、車そのものの機能性と、利用シーンをイメージできるデザインを目指しました。
+      </p>
+      <ul>
+        <li>背景色にはアースカラーを用い、キャンプ・自然と親和性の高いトーンで全体をまとめる</li>
+        <li>キャンプ、車中泊、アウトドアアクティビティなどの写真を随所に配置し、「この車で何ができるのか」を直感的に理解できる構成に</li>
+      </ul>
+
+      <div class="work-image-grid-center">
+        <img src="img/LP/LP_02_PC.png" alt="PCのサムネイル画像" class="js-fit-modal-image">
+      </div>
+
+      <!-- モーダルを開くボタン -->
+      <div class="work-modal-trigger">
+        <button
+          type="button"
+          class="js-scroll-modal-trigger modal-btn"
+          data-full="img/LP/LP_02.png"
+        >
+          ページ全体をみる
+        </button>
+      </div>
+      <!-- スクロールあり：縦スクロール用モーダル -->
+      <div class="image-modal-scroll" id="imageModalScroll" aria-hidden="true">
+        <div class="image-modal-scroll__content">
+          <div class="modal-text">
+            <p>スクロールしてください</p>
+          </div>
+          <button class="image-modal-scroll__close" aria-label="Close">×</button>
+          <div class="image-modal-scroll__body">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 振り返り</h2>
+      <p>
+        「アウトドア体験の訴求」と「車両の機能説明」のバランスを意識しました。ビジュアルでアウトドアやキャンプといった体験の訴求、テキストで機能面など車両の魅力を補完する構成にできました。
+        <br>
+      </p>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <p>© 2025</p>
+</footer>
+
+<div class="image-modal-fit" id="imageModalFit" aria-hidden="true">
+  <button class="image-modal-fit__close" aria-label="Close">×</button>
+  <img src="" alt="">
+</div>
+<script src="js/style.js"></script>
+
+</body>
+</html>

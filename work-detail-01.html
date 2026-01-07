@@ -127,8 +127,31 @@
         <li>徐々に“温度が上がっていく”印象を与えるような、堅すぎず温かみのある企業イメージを表現しました</li>
       </ul>
       <div class="work-image-grid">
-        <img src="img/ysp/PC_ysp.jpg" alt="PCのデザイン画像" class="js-modal-image">
-        <img src="img/ysp/SP_ysp.jpg" alt="SPのデザイン画像" class="js-modal-image">
+        <img src="img/ysp/PC_ysp.jpg" alt="PCのデザイン画像" class="js-fit-modal-image">
+        <img src="img/ysp/SP_ysp.jpg" alt="SPのデザイン画像" class="js-fit-modal-image">
+      </div>
+
+      <!-- モーダルを開くボタン -->
+      <div class="work-modal-trigger">
+        <button
+          type="button"
+          class="js-scroll-modal-trigger modal-btn"
+          data-full="img/ysp/cap_ysp.png"
+        >
+          ページ全体をみる
+        </button>
+      </div>
+      <!-- スクロールあり：縦スクロール用モーダル -->
+      <div class="image-modal-scroll" id="imageModalScroll" aria-hidden="true">
+        <div class="image-modal-scroll__content">
+          <div class="modal-text">
+            <p>スクロールしてください</p>
+          </div>
+          <button class="image-modal-scroll__close" aria-label="Close">×</button>
+          <div class="image-modal-scroll__body">
+            <img src="" alt="">
+          </div>
+        </div>
       </div>
 
       <h3>UI設計</h3>
@@ -139,7 +162,7 @@
 
       <h3>イラスト制作</h3>
       <div class="work-image-grid">
-        <img src="img/ysp/img_ysp.jpg" alt="PCのデザイン画像" class="js-modal-image">
+        <img src="img/ysp/img_ysp.jpg" alt="PCのデザイン画像" class="js-fit-modal-image">
       </div>
 
     </section>
@@ -167,8 +190,8 @@
   <p>© 2025</p>
 </footer>
 
-<div class="image-modal" id="imageModal">
-  <button class="image-modal__close" aria-label="Close">×</button>
+<div class="image-modal-fit" id="imageModalFit" aria-hidden="true">
+  <button class="image-modal-fit__close" aria-label="Close">×</button>
   <img src="" alt="">
 </div>
 <script src="js/style.js"></script>

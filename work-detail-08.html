@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <p class="logo">My Portfolio</p>
+    </a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="index.html#work">Work</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="work-detail">
+
+    <!-- ===== Hero / Summary ===== -->
+    <section class="work-hero">
+      <div class="work-hero-inner">
+
+        <!-- サムネイル -->
+        <div class="work-hero-image">
+          <img src="img/banner/thumb_banner_01.jpg" alt=" サムネイル画像">
+        </div>
+
+        <!-- 概要 -->
+        <div class="work-hero-meta">
+          <p class="work-category">✴︎ My work</p>
+          <h1 class="work-title">バナー制作</h1>
+          <p class="work-client">某着物ブランド様</p>
+
+          <ul class="work-tags">
+            <li>Design</li>
+          </ul>
+
+          <dl class="work-info">
+            <div>
+              <dt>担当範囲</dt>
+              <dd>
+                ビジュアルデザイン
+              </dd>
+            </div>
+            <div>
+              <dt>制作期間</dt>
+              <dd>約1日</dd>
+            </div>
+            <div>
+              <dt>使用ツール</dt>
+              <dd>Photoshop</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Content Blocks ===== -->
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ 概要</h2>
+      <p>
+        着物ブランドのセールを告知するためのバナーを制作しました。公式サイトのトップページのスライダーに掲載されるため、サイト訪問時に短時間でセール内容が理解でき、かつブランドイメージに合った表現が求められました。
+      </p>
+    </section>
+
+    <section class="work-section">
+      <h2 class="work-section-title">✴︎ デザイン</h2>
+      <p>
+        セールの強さを明確に伝えつつ、着物ブランドの上質感も取り入れたデザインを目指しました。
+      </p>
+      <ul>
+        <li>背景には赤を採用し、セールのインパクトと「90周年」という記念性を強調</li>
+        <li>クライアント提供の画像をグリッド状に配置し、商品のバリエーションの豊富さと品質感が一目で伝わる構成に</li>
+        <li>「詳しくはこちらから」をボタンのようなデザインにすることで、次のアクションが直感的に判断できる設計</li>
+      </ul>
+      <div class="work-image-grid-banner">
+        <img src="img/banner/PC_banner_01.jpg" alt="PCのバナー画像" class="js-fit-modal-image">
+        <img src="img/banner/SP_banner_01.jpg" alt="SPのバナー画像" class="js-fit-modal-image">
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <p>© 2025</p>
+</footer>
+
+<div class="image-modal-fit" id="imageModalFit" aria-hidden="true">
+  <button class="image-modal-fit__close" aria-label="Close">×</button>
+  <img src="" alt="">
+</div>
+<script src="js/style.js"></script>
+
+</body>
+</html>
